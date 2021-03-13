@@ -1,0 +1,136 @@
+@font-face {
+  font-family: sanfrancisco;
+  font-weight: lighter;
+  src: url("/fonts/SanFranciscoText-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: sanfrancisco;
+  font-weight: bold;
+  src: url("/fonts/SanFranciscoText-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: sanfrancisco;
+  font-weight: normal;
+  src: url("/fonts/SanFranciscoText-Regular.otf") format("opentype");
+}
+.navbar {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.navbar__item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navbar__item:hover {
+  cursor: pointer;
+}
+
+.navbar__no-wallet:hover {
+  cursor: auto;
+  font-weight: lighter;
+}
+
+.navbar__item--disabled {
+  opacity: 0.6;
+}
+.navbar__item--disabled:hover {
+  cursor: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #020024;
+  background: linear-gradient(0deg, #020024 0%, #01313b 100%);
+  margin: 0;
+  font-family: sanfrancisco;
+  font-weight: normal;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage__title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.homepage__cta {
+  box-shadow: inset 0px 1px 0px 0px #54a3f7;
+  background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  background-color: #007dc1;
+  border-radius: 3px;
+  border: 1px solid #124d77;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #154682;
+}
+
+.homepage__cta:hover {
+  background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+  background-color: #0061a7;
+}
+
+.homepage__cta:active {
+  position: relative;
+  top: 1px;
+}
+
+.homepage__cta-container {
+  padding-top: 15px;
+}
+
+.row {
+  width: auto;
+}
+
+.flex-item {
+  flex: 1;
+}
+
+.application-container {
+  justify-content: center;
+  text-align: center;
+}
+
+.homepage__logo {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.flex {
+  display: flex;
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container > li {
+    flex-basis: 50%;
+  }
+}
+
+/*# sourceMappingURL=the-coin-review.css.map */
